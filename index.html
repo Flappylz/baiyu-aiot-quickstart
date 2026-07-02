@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="百融百语智能语音玩具快速上手、配网、使用与固件升级说明">
+  <title>百融百语｜智能语音玩具快速上手</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="返回顶部">
+      <span class="brand-mark">B</span>
+      <span>百融百语</span>
+    </a>
+    <a class="top-link" href="#faq">常见问题</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">智能语音玩具</p>
+        <h1>你好，<span id="hero-name">百小融</span></h1>
+        <p class="lead">打开电源，连接网络，就可以开始聊天。</p>
+        <div class="device-switcher" role="group" aria-label="选择设备">
+          <button class="device-button active" data-device="百小融" data-wake="小融">百小融</button>
+          <button class="device-button" data-device="卡皮巴拉" data-wake="卡皮">卡皮巴拉</button>
+          <button class="device-button" data-device="泰迪熊" data-wake="泰迪">泰迪熊</button>
+        </div>
+        <p class="wake-line">唤醒词 <strong id="wake-word">小融</strong></p>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/baixiaorong-product.jpg" alt="百小融智能语音玩具">
+      </div>
+    </section>
+
+    <nav class="section-nav" aria-label="页面导航">
+      <a href="#pairing">配网</a>
+      <a href="#talk">对话</a>
+      <a href="#ota">升级</a>
+      <a href="#safety">安全</a>
+    </nav>
+
+    <section class="pairing" id="pairing">
+      <div class="section-heading">
+        <p class="eyebrow">先完成这一步</p>
+        <h2>连接 2.4GHz Wi-Fi</h2>
+        <p>配网时保持机芯开启，并将手机放在玩具附近。</p>
+      </div>
+
+      <div class="prep-strip">
+        <span>机芯电源已开启</span>
+        <span>手机蓝牙已开启</span>
+        <span>已连接 2.4GHz Wi-Fi</span>
+      </div>
+
+      <ol class="steps">
+        <li><span class="step-number">01</span><div><h3>打开小程序</h3><p>进入“百融百语”小程序的“设备”页面。</p></div></li>
+        <li><span class="step-number">02</span><div><h3>添加设备</h3><p>点击右上角“+”，再点击“连接设备”。</p></div></li>
+        <li><span class="step-number">03</span><div><h3>允许蓝牙权限</h3><p>根据手机提示允许蓝牙及相关权限，等待扫描附近设备。</p></div></li>
+        <li><span class="step-number">04</span><div><h3>选择发现的设备</h3><p>扫描完成后，点击设备列表中的可用设备。</p></div></li>
+        <li><span class="step-number">05</span><div><h3>填写 Wi-Fi</h3><p>确认 Wi-Fi 名称，输入正确的 Wi-Fi 密码。</p></div></li>
+        <li><span class="step-number">06</span><div><h3>开始配网</h3><p>点击“开始配网”，等待设备出现在“我的设备”列表中。</p></div></li>
+      </ol>
+    </section>
+
+    <section class="talk-band" id="talk">
+      <div class="section-heading light">
+        <p class="eyebrow">两种方式</p>
+        <h2>现在，和它聊聊天</h2>
+      </div>
+      <div class="talk-grid">
+        <article>
+          <span class="talk-index">A</span>
+          <h3>说出唤醒词</h3>
+          <p>靠近玩具，说“<strong id="inline-wake">小融</strong>”，听到响应后开始说话。</p>
+        </article>
+        <article>
+          <span class="talk-index">B</span>
+          <h3>按住右手说话</h3>
+          <p>按住玩具右手的说话按钮，清楚说话；说完后松开，等待回复。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="ota" id="ota">
+      <div class="section-heading">
+        <p class="eyebrow">保持新鲜</p>
+        <h2>固件升级</h2>
+      </div>
+      <div class="ota-flow">
+        <p><b>1</b> 在“我的设备”中进入对应设备</p>
+        <p><b>2</b> 打开“固件升级”</p>
+        <p><b>3</b> 有新版本时，按照页面提示完成升级</p>
+      </div>
+      <div class="notice">升级期间保持电量充足和网络稳定，不要关闭设备或离开小程序。</div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="section-heading">
+        <p class="eyebrow">遇到问题</p>
+        <h2>快速排查</h2>
+      </div>
+      <details open><summary>扫描不到设备</summary><p>确认机芯电源开关已经开启；开启手机蓝牙及相关权限；将手机靠近玩具后重新扫描。</p></details>
+      <details><summary>Wi-Fi 配置失败</summary><p>确认手机连接的是 2.4GHz Wi-Fi，重新检查 Wi-Fi 名称和密码，并确保路由器网络正常。</p></details>
+      <details><summary>设备没有回应</summary><p>确认设备已开机并联网，检查电量；按住右手按钮重新说话，或关闭电源后再次开启。</p></details>
+      <details><summary>唤醒词没有反应</summary><p>靠近玩具，以自然音量清楚说出对应唤醒词；环境嘈杂时可直接使用右手说话按钮。</p></details>
+    </section>
+
+    <section class="safety" id="safety">
+      <div class="section-heading">
+        <p class="eyebrow">使用须知</p>
+        <h2>安全与隐私</h2>
+      </div>
+      <ul>
+        <li>儿童使用时，由成人协助完成充电、配网和账号授权。</li>
+        <li>请勿整机水洗、浸泡、拆解、重摔或靠近火源。</li>
+        <li>请勿在对话中透露身份证件、账号密码、住址、联系方式等敏感信息。</li>
+        <li>AI 生成内容用于互动与陪伴，不替代医疗、法律、财务或其他专业意见。</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <strong>百融百语</strong>
+    <span>让智能硬件更懂交流</span>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
