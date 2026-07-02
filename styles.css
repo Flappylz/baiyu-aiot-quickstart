@@ -69,6 +69,8 @@ section:not(.hero):not(.talk-band) { max-width: 960px; margin: 0 auto; padding: 
 .prep-strip { display: grid; grid-template-columns: repeat(3, 1fr); margin-bottom: 46px; border: 1px solid #e7ce63; background: var(--yellow-soft); }
 .prep-strip span { padding: 18px 20px; text-align: center; font-size: 14px; font-weight: 700; }
 .prep-strip span + span { border-left: 1px solid #e7ce63; }
+.repair-note { display: grid; grid-template-columns: 120px 1fr; gap: 18px; align-items: center; margin: -22px 0 46px; padding: 18px 20px; border-left: 4px solid var(--red); background: #f4f2ea; font-size: 14px; line-height: 1.7; }
+.repair-note strong { color: var(--red); }
 .steps { margin: 0; padding: 0; list-style: none; border-top: 2px solid var(--ink); }
 .steps li { display: grid; grid-template-columns: 90px 1fr; gap: 20px; padding: 28px 0; border-bottom: 1px solid var(--line); }
 .step-number { color: var(--red); font-size: 24px; font-weight: 900; }
@@ -112,6 +114,7 @@ footer { display: flex; justify-content: space-between; padding: 38px max(28px, 
   .section-heading h2 { font-size: 32px; }
   .prep-strip { grid-template-columns: 1fr; }
   .prep-strip span + span { border-left: 0; border-top: 1px solid #e7ce63; }
+  .repair-note { grid-template-columns: 1fr; gap: 4px; margin-top: -22px; }
   .steps li { grid-template-columns: 54px 1fr; }
   .talk-band { padding: 66px 22px; }
   .talk-grid, .ota-flow, .safety ul { grid-template-columns: 1fr; }
