@@ -86,6 +86,13 @@ section:not(.hero):not(.talk-band) { max-width: 960px; margin: 0 auto; padding: 
 .talk-grid h3 { margin: 50px 0 12px; font-size: 27px; }
 .talk-grid p { margin: 0; color: #c9c9ca; line-height: 1.8; }
 .talk-grid strong { color: var(--yellow); }
+.action-table-wrap { overflow-x: auto; border-top: 2px solid var(--ink); }
+.action-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.action-table th, .action-table td { padding: 18px 16px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; line-height: 1.65; }
+.action-table th { font-size: 12px; color: var(--muted); }
+.action-table th:first-child, .action-table td:first-child { width: 180px; font-weight: 700; }
+.action-table th:nth-child(2), .action-table td:nth-child(2) { width: 170px; }
+.action-table td strong { color: var(--red); }
 
 .ota-flow { display: grid; grid-template-columns: repeat(3, 1fr); border-block: 1px solid var(--line); }
 .ota-flow p { margin: 0; padding: 28px 24px; line-height: 1.65; }
@@ -119,6 +126,12 @@ footer { display: flex; justify-content: space-between; padding: 38px max(28px, 
   .talk-band { padding: 66px 22px; }
   .talk-grid, .ota-flow, .safety ul { grid-template-columns: 1fr; }
   .talk-grid article { min-height: 210px; }
+  .action-table, .action-table tbody, .action-table tr, .action-table td { display: block; width: 100%; }
+  .action-table thead { display: none; }
+  .action-table tr { padding: 16px 0; border-bottom: 1px solid var(--line); }
+  .action-table td { padding: 3px 0; border: 0; }
+  .action-table td:first-child, .action-table td:nth-child(2) { width: 100%; }
+  .action-table td:nth-child(2) { color: var(--muted); font-size: 12px; }
   .ota-flow p + p { border-left: 0; border-top: 1px solid var(--line); }
   footer { flex-direction: column; gap: 8px; padding: 32px 22px; }
 }

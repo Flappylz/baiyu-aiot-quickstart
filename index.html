@@ -38,6 +38,7 @@
     <nav class="section-nav" aria-label="页面导航">
       <a href="#pairing">配网</a>
       <a href="#talk">对话</a>
+      <a href="#buttons">按键</a>
       <a href="#ota">升级</a>
       <a href="#safety">安全</a>
     </nav>
@@ -55,7 +56,7 @@
         <span>已连接 2.4GHz Wi-Fi</span>
       </div>
 
-      <div class="repair-note"><strong>重新配网</strong><span>需要更换 Wi-Fi 时，保持设备开启，长按玩具右脚按钮 10 秒，再返回小程序扫描设备。</span></div>
+      <div class="repair-note"><strong>联网与重配</strong><span>长按脚部按钮 10 秒可尝试重连已保存的 Wi-Fi；长按 20 秒会清除旧 Wi-Fi，并进入重新配网。</span></div>
 
       <ol class="steps">
         <li><span class="step-number">01</span><div><h3>打开小程序</h3><p>进入“百融百语”小程序的“设备”页面。</p></div></li>
@@ -81,8 +82,29 @@
         <article>
           <span class="talk-index">B</span>
           <h3>按右脚按钮</h3>
-          <p>按一下玩具右脚按钮，听到响应后直接开始说话。</p>
+          <p>设备已联网时，短按一次脚部按钮进入双工对话；听到响应后直接开始说话。</p>
         </article>
+      </div>
+    </section>
+
+    <section class="button-actions" id="buttons">
+      <div class="section-heading">
+        <p class="eyebrow">一个按键，多种操作</p>
+        <h2>脚部按键快捷操作</h2>
+        <p>按键功能会根据联网状态、长按时间和连击次数变化。</p>
+      </div>
+      <div class="action-table-wrap">
+        <table class="action-table">
+          <thead><tr><th>按键动作</th><th>触发状态</th><th>对应功能</th></tr></thead>
+          <tbody>
+            <tr><td>短按 1 次</td><td>未联网</td><td><strong>提示配网</strong><br>播放语音提示，引导配置网络。</td></tr>
+            <tr><td>短按 1 次</td><td>已联网</td><td><strong>进入双工对话</strong><br>连接已配置的 Agent，进入聆听状态。</td></tr>
+            <tr><td>双击</td><td>已联网</td><td><strong>强制结束对话</strong><br>切断当前对话链路，进入待机状态。</td></tr>
+            <tr><td>长按 10 秒</td><td>任意正常状态</td><td><strong>联网或重连</strong><br>进入配网模式，尝试连接已保存的 Wi-Fi。</td></tr>
+            <tr><td>长按 20 秒</td><td>任意正常状态</td><td><strong>重新配置网络</strong><br>清除旧 Wi-Fi，进入配网模式并启动配网。</td></tr>
+            <tr><td>连续快速按键超过 5 次</td><td>任意正常状态</td><td><strong>系统重启</strong><br>固件执行软重启。</td></tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
@@ -105,7 +127,8 @@
         <h2>快速排查</h2>
       </div>
       <details open><summary>扫描不到设备</summary><p>确认机芯电源开关已经开启；开启手机蓝牙及相关权限；将手机靠近玩具后重新扫描。</p></details>
-      <details><summary>如何重新配网</summary><p>保持设备开启，长按玩具右脚按钮 10 秒，然后返回小程序重新扫描设备并配置 Wi-Fi。</p></details>
+      <details><summary>如何重新连接原来的 Wi-Fi</summary><p>保持设备开启，长按脚部按钮 10 秒，设备会进入配网模式并尝试重新连接已保存的 Wi-Fi。</p></details>
+      <details><summary>如何清除旧 Wi-Fi 并重新配网</summary><p>保持设备开启，长按脚部按钮 20 秒，设备会清除旧 Wi-Fi 信息并进入配网模式。</p></details>
       <details><summary>Wi-Fi 配置失败</summary><p>确认手机连接的是 2.4GHz Wi-Fi，重新检查 Wi-Fi 名称和密码，并确保路由器网络正常。</p></details>
       <details><summary>设备没有回应</summary><p>确认设备已开机并联网，检查电量；重新说出唤醒词或按一下右脚按钮，也可以关闭电源后再次开启。</p></details>
       <details><summary>唤醒词没有反应</summary><p>靠近玩具，以自然音量清楚说出对应唤醒词；环境嘈杂时可按一下右脚按钮唤醒。</p></details>
